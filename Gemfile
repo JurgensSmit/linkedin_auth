@@ -37,3 +37,19 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'debugger'
+
+gem 'omniauth'
+gem 'omniauth-linkedin'
+gem 'thin'
+
+group :assets do
+  gem 'compass-rails'
+  gem 'zurb-foundation'
+end
+
+group :development do
+  gem 'better_errors'
+  gem 'binding_of_caller', :platforms=>[:mri_19, :rbx]
+  gem 'hub', :require=>nil
+end
+
